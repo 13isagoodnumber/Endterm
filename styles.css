@@ -1,0 +1,384 @@
+
+
+ nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #1d3557;
+            overflow: hidden;
+            z-index: 1000;
+        }
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #457b9d;
+}
+
+.about-author {
+    float: right;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+body {
+  margin:0px;
+  text-align:center;
+  padding-top:43vh;
+  color:#fff;
+  font-family:'Roboto';
+  font-size:36px;
+  font-weight:100;
+  overflow:hidden;
+  animation:bg 5s linear infinite;
+}
+
+.dropping-texts {
+  display: inline-block;
+  width: 180px;
+  text-align: left;
+  height: 36px;
+  vertical-align: -2px;
+}
+
+.dropping-texts > div {
+  font-size:0px;
+  opacity:0;
+  margin-left:-30px;
+  position:absolute;
+  font-weight:300;   
+  box-shadow: 0px 60px 25px -20px rgba(0,0,0,0.5);
+}
+
+.dropping-texts > div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+.dropping-texts > div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+.dropping-texts > div:nth-child(4) {
+  animation: roll2 5s linear infinite 3s;
+}
+
+@keyframes roll {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  20% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size:0px;
+    opacity:0.5;
+    margin-left:20px;
+    margin-top:100px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  30% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  37% {
+    font-size:1500px;
+    opacity:0;
+    margin-left:-1000px;
+    margin-top:-800px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes bg {
+  0% {background: #ff0075;}
+  3% {background: #0094ff;}
+  20% {background: #0094ff;}
+  23% {background: #b200ff;}
+  40% {background: #b200ff;}
+  43% {background: #8BC34A;}
+  60% {background: #8BC34A;}
+  63% {background: #F44336;}
+  80% {background: #F44336;}
+  83% {background: #F44336;}
+  100% {background: #F44336;}
+}
+
+.box {
+    margin-left: 40vh;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateAnimation 7s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(30deg); 
+    }
+    12% {
+        transform: rotate(45deg);
+    }
+    24% {
+        transform: rotate(75deg);
+    }
+    36% {
+        transform: rotate(90deg);
+    }
+    48% {
+        transform: rotate(120deg);
+    }
+    84% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(270deg); 
+    }
+}
+.box2 {
+    margin-left: 80vh;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scaleAnimation 7s linear infinite;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1, 1); 
+    }
+    16.66% {
+        transform: scale(1, 2); 
+    }
+    33.33% {
+        transform: scale(1, 4); 
+    }
+    50% {
+        transform: scale(2, 1); 
+    }
+    66.66% {
+        transform: scale(2, 2); 
+    }
+    83.33% {
+        transform: scale(4, 4); /
+    }
+    100% {
+        transform: scale(4, 4); 
+    }
+}
+.box3 {
+    margin-left: 160vh;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: skewAnimation 8s linear infinite; 
+}
+
+@keyframes skewAnimation {
+    0% {
+        transform: skew(10deg); 
+    }
+    16.66% {
+        transform: skew(20deg);
+    }
+    33.33% {
+        transform: skew(45deg); 
+    }
+    50% {
+        transform: skew(60deg); 
+    }
+    100% {
+        transform: skew(120deg); 
+    }
+}
+.box4 {
+    margin-left: 90vh;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+
+    
+    animation: translateAnimation 8s linear infinite; 
+}
+
+.clouds1 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    animation: moveClouds1 20s linear infinite, rotateClouds 30s linear infinite;
+}
+
+.clouds2 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 60px;
+    left: -200px;
+    animation: moveClouds2 20s linear infinite, rotateClouds 40s linear infinite;
+}
+
+.clouds3 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 120px;
+    left: -400px;
+    animation: moveClouds3 20s linear infinite, rotateClouds 25s linear infinite;
+}
+
+@keyframes translateAnimation {
+    0% {
+        transform: translate(10px, 30px); 
+    }
+    16.66% {
+        transform: translate(10px, 20px); 
+    }
+    33.33% {
+        transform: translate(10px, 40px); 
+    }
+    50% {
+        transform: translate(20px, 10px); 
+    }
+    66.66% {
+        transform: translate(20px, 40px); 
+    }
+    100% {
+        transform: translate(60px, 60px); 
+    }
+}
+@keyframes moveClouds1 {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes moveClouds2 {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes moveClouds3 {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

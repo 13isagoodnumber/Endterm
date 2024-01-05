@@ -1,0 +1,26 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1d3557;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+nav a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+transition: background-color 0.3s;
+}
+
+nav a:hover {
+background-color: #457b9d;
+}
+.about-author {
+    float: right;
+}
